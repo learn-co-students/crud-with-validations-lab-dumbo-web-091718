@@ -11,7 +11,7 @@ RSpec.describe 'songs/edit', type: :feature do
 
   let(:song) { Song.create!(song_attributes) }
 
-  it 'renders the edit song form' do
+  xit 'renders the edit song form' do
     visit edit_song_path(song)
 
     form = find('form')
