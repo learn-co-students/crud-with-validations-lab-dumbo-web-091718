@@ -1,0 +1,10 @@
+<h1>My Song</h1>
+
+<p><%= @song.title %></p>
+<p><%= @song.release_year %></p>
+<p><%= @song.genre %></p>
+<p><%= @song.artist_name %></p>
+
+# destroy button
+<%= link_to "Delete Song", song, method: :delete,
+                                  data: { confirm: "Are you sure?" } %>
